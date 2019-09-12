@@ -1,1 +1,1 @@
-carpeta de practicas
+En esta carpeta se agregarán las prácticas con el formato solicitado

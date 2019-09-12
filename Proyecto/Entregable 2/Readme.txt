@@ -1,1 +1,1 @@
-carpeta de proyecto
+Se agregará el segundo entregable del proyecto
