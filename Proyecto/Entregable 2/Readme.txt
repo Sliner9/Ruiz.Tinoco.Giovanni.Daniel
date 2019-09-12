@@ -1,1 +1,0 @@
-Se agregará el segundo entregable del proyecto
