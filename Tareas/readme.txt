@@ -1,1 +1,1 @@
-carpeta para las tareas
+carpeta de tareas
