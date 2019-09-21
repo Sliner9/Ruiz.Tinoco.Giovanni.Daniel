@@ -1,0 +1,625 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5D7CF588
+P 1475 3650
+F 0 "V1" H 1703 3696 50  0000 L CNN
+F 1 "VSOURCE" H 1703 3605 50  0000 L CNN
+F 2 "" H 1475 3650 50  0001 C CNN
+F 3 "~" H 1475 3650 50  0001 C CNN
+F 4 "V" H 1475 3650 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 380 50)" H 1475 3650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1475 3650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1475 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5D7CF5FE
+P 2350 3650
+F 0 "V2" H 2578 3696 50  0000 L CNN
+F 1 "VSOURCE" H 2578 3605 50  0000 L CNN
+F 2 "" H 2350 3650 50  0001 C CNN
+F 3 "~" H 2350 3650 50  0001 C CNN
+F 4 "V" H 2350 3650 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 220 50)" H 2350 3650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2350 3650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V3
+U 1 1 5D7CF826
+P 3350 3650
+F 0 "V3" H 3578 3696 50  0000 L CNN
+F 1 "VSOURCE" H 3578 3605 50  0000 L CNN
+F 2 "" H 3350 3650 50  0001 C CNN
+F 3 "~" H 3350 3650 50  0001 C CNN
+F 4 "V" H 3350 3650 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 110 50)" H 3350 3650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3350 3650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D7CFF8B
+P 3950 4275
+F 0 "R1" V 3743 4275 50  0000 C CNN
+F 1 "1 M" V 3834 4275 50  0000 C CNN
+F 2 "" V 3880 4275 50  0001 C CNN
+F 3 "~" H 3950 4275 50  0001 C CNN
+	1    3950 4275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10025 2225 10025 2025
+Wire Wire Line
+	7025 1375 7025 1475
+Connection ~ 7025 1375
+Wire Wire Line
+	6575 1375 7025 1375
+$Comp
+L pspice:INDUCTOR L3
+U 1 1 5D7DB690
+P 6325 1375
+F 0 "L3" H 6325 1590 50  0000 C CNN
+F 1 "1 mh" H 6325 1499 50  0000 C CNN
+F 2 "" H 6325 1375 50  0001 C CNN
+F 3 "~" H 6325 1375 50  0001 C CNN
+	1    6325 1375
+	1    0    0    -1  
+$EndComp
+Connection ~ 7725 550 
+Wire Wire Line
+	7025 550  7725 550 
+Wire Wire Line
+	7025 875  7025 550 
+Connection ~ 7725 2075
+Wire Wire Line
+	7025 2075 7725 2075
+Wire Wire Line
+	7025 1875 7025 2075
+Wire Wire Line
+	7025 1275 7025 1375
+Connection ~ 8675 2025
+Wire Wire Line
+	8375 2025 8675 2025
+Wire Wire Line
+	8375 2075 8375 2025
+Wire Wire Line
+	7725 2075 8375 2075
+Connection ~ 9350 2025
+Wire Wire Line
+	8675 2025 9350 2025
+Wire Wire Line
+	8675 1650 8675 2025
+Wire Wire Line
+	7725 1675 7725 1500
+Wire Wire Line
+	8675 550  7725 550 
+Connection ~ 8675 550 
+Wire Wire Line
+	8675 1150 8675 550 
+Wire Wire Line
+	7725 550  7725 875 
+Wire Wire Line
+	9350 550  8675 550 
+Wire Wire Line
+	9350 1200 9350 550 
+Wire Wire Line
+	9350 2025 9350 1500
+Wire Wire Line
+	9550 2025 9350 2025
+Wire Wire Line
+	10025 2025 9850 2025
+$Comp
+L power:GND #PWR04
+U 1 1 5D7D3FD2
+P 10025 2225
+F 0 "#PWR04" H 10025 1975 50  0001 C CNN
+F 1 "GND" H 10030 2052 50  0000 C CNN
+F 2 "" H 10025 2225 50  0001 C CNN
+F 3 "" H 10025 2225 50  0001 C CNN
+	1    10025 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5D7D39CA
+P 9700 2025
+F 0 "R7" V 9907 2025 50  0000 C CNN
+F 1 "10 " V 9816 2025 50  0000 C CNN
+F 2 "" V 9630 2025 50  0001 C CNN
+F 3 "~" H 9700 2025 50  0001 C CNN
+F 4 "R" H 9700 2025 50  0001 C CNN "Spice_Primitive"
+F 5 "10 meg" H 9700 2025 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9700 2025 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9700 2025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D7D38C6
+P 9350 1350
+F 0 "R6" H 9420 1396 50  0000 L CNN
+F 1 "R" H 9420 1305 50  0000 L CNN
+F 2 "" V 9280 1350 50  0001 C CNN
+F 3 "~" H 9350 1350 50  0001 C CNN
+F 4 "R" H 9350 1350 50  0001 C CNN "Spice_Primitive"
+F 5 "10" H 9350 1350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9350 1350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C3
+U 1 1 5D7D36D5
+P 8675 1400
+F 0 "C3" H 8853 1446 50  0000 L CNN
+F 1 "1 mf" H 8853 1355 50  0000 L CNN
+F 2 "" H 8675 1400 50  0001 C CNN
+F 3 "~" H 8675 1400 50  0001 C CNN
+	1    8675 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D12
+U 1 1 5D7D2DDF
+P 7725 1875
+F 0 "D12" V 7771 1747 50  0000 R CNN
+F 1 "DIODE" V 7680 1747 50  0000 R CNN
+F 2 "" H 7725 1875 50  0001 C CNN
+F 3 "~" H 7725 1875 50  0001 C CNN
+	1    7725 1875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D10
+U 1 1 5D7D2524
+P 7025 1675
+F 0 "D10" V 7071 1547 50  0000 R CNN
+F 1 "DIODE" V 6980 1547 50  0000 R CNN
+F 2 "" H 7025 1675 50  0001 C CNN
+F 3 "~" H 7025 1675 50  0001 C CNN
+	1    7025 1675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D11
+U 1 1 5D7D2182
+P 7725 1075
+F 0 "D11" V 7771 947 50  0000 R CNN
+F 1 "DIODE" V 7680 947 50  0000 R CNN
+F 2 "" H 7725 1075 50  0001 C CNN
+F 3 "~" H 7725 1075 50  0001 C CNN
+	1    7725 1075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D9
+U 1 1 5D7D1F2C
+P 7025 1075
+F 0 "D9" V 7071 947 50  0000 R CNN
+F 1 "DIODE" V 6980 947 50  0000 R CNN
+F 2 "" H 7025 1075 50  0001 C CNN
+F 3 "~" H 7025 1075 50  0001 C CNN
+	1    7025 1075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8675 4125 8675 3925
+Wire Wire Line
+	5675 3275 5675 3375
+Connection ~ 5675 3275
+Wire Wire Line
+	5225 3275 5675 3275
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5D804F0C
+P 4975 3275
+F 0 "L2" H 4975 3490 50  0000 C CNN
+F 1 "1 mh" H 4975 3399 50  0000 C CNN
+F 2 "" H 4975 3275 50  0001 C CNN
+F 3 "~" H 4975 3275 50  0001 C CNN
+	1    4975 3275
+	1    0    0    -1  
+$EndComp
+Connection ~ 6375 2450
+Wire Wire Line
+	5675 2450 6375 2450
+Wire Wire Line
+	5675 2775 5675 2450
+Connection ~ 6375 3975
+Wire Wire Line
+	5675 3975 6375 3975
+Wire Wire Line
+	5675 3775 5675 3975
+Wire Wire Line
+	5675 3175 5675 3275
+Connection ~ 7325 3925
+Wire Wire Line
+	7025 3925 7325 3925
+Wire Wire Line
+	7025 3975 7025 3925
+Wire Wire Line
+	6375 3975 7025 3975
+Connection ~ 8000 3925
+Wire Wire Line
+	7325 3925 8000 3925
+Wire Wire Line
+	7325 3550 7325 3925
+Wire Wire Line
+	7325 2450 6375 2450
+Connection ~ 7325 2450
+Wire Wire Line
+	7325 3050 7325 2450
+Wire Wire Line
+	6375 2450 6375 2775
+Wire Wire Line
+	8000 2450 7325 2450
+Wire Wire Line
+	8000 3100 8000 2450
+Wire Wire Line
+	8200 3925 8000 3925
+Wire Wire Line
+	8675 3925 8500 3925
+$Comp
+L power:GND #PWR03
+U 1 1 5D804F2E
+P 8675 4125
+F 0 "#PWR03" H 8675 3875 50  0001 C CNN
+F 1 "GND" H 8680 3952 50  0000 C CNN
+F 2 "" H 8675 4125 50  0001 C CNN
+F 3 "" H 8675 4125 50  0001 C CNN
+	1    8675 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D804F3B
+P 8350 3925
+F 0 "R5" V 8557 3925 50  0000 C CNN
+F 1 "10 " V 8466 3925 50  0000 C CNN
+F 2 "" V 8280 3925 50  0001 C CNN
+F 3 "~" H 8350 3925 50  0001 C CNN
+F 4 "R" H 8350 3925 50  0001 C CNN "Spice_Primitive"
+F 5 "10 meg" H 8350 3925 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8350 3925 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8350 3925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D804F48
+P 8000 3250
+F 0 "R3" H 8070 3296 50  0000 L CNN
+F 1 "R" H 8070 3205 50  0000 L CNN
+F 2 "" V 7930 3250 50  0001 C CNN
+F 3 "~" H 8000 3250 50  0001 C CNN
+F 4 "R" H 8000 3250 50  0001 C CNN "Spice_Primitive"
+F 5 "10" H 8000 3250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8000 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C2
+U 1 1 5D804F52
+P 7325 3300
+F 0 "C2" H 7503 3346 50  0000 L CNN
+F 1 "1 mf" H 7503 3255 50  0000 L CNN
+F 2 "" H 7325 3300 50  0001 C CNN
+F 3 "~" H 7325 3300 50  0001 C CNN
+	1    7325 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D8
+U 1 1 5D804F5C
+P 6375 3775
+F 0 "D8" V 6421 3647 50  0000 R CNN
+F 1 "DIODE" V 6330 3647 50  0000 R CNN
+F 2 "" H 6375 3775 50  0001 C CNN
+F 3 "~" H 6375 3775 50  0001 C CNN
+	1    6375 3775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D4
+U 1 1 5D804F66
+P 5675 3575
+F 0 "D4" V 5721 3447 50  0000 R CNN
+F 1 "DIODE" V 5630 3447 50  0000 R CNN
+F 2 "" H 5675 3575 50  0001 C CNN
+F 3 "~" H 5675 3575 50  0001 C CNN
+	1    5675 3575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D7
+U 1 1 5D804F70
+P 6375 2975
+F 0 "D7" V 6421 2847 50  0000 R CNN
+F 1 "DIODE" V 6330 2847 50  0000 R CNN
+F 2 "" H 6375 2975 50  0001 C CNN
+F 3 "~" H 6375 2975 50  0001 C CNN
+	1    6375 2975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D3
+U 1 1 5D804F7A
+P 5675 2975
+F 0 "D3" V 5721 2847 50  0000 R CNN
+F 1 "DIODE" V 5630 2847 50  0000 R CNN
+F 2 "" H 5675 2975 50  0001 C CNN
+F 3 "~" H 5675 2975 50  0001 C CNN
+	1    5675 2975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 5950 8650 5750
+Wire Wire Line
+	5650 5100 5650 5200
+Connection ~ 5650 5100
+Wire Wire Line
+	5200 5100 5650 5100
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5D80EC67
+P 4950 5100
+F 0 "L1" H 4950 5315 50  0000 C CNN
+F 1 "1 mh" H 4950 5224 50  0000 C CNN
+F 2 "" H 4950 5100 50  0001 C CNN
+F 3 "~" H 4950 5100 50  0001 C CNN
+	1    4950 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 4275
+Wire Wire Line
+	5650 4275 6350 4275
+Wire Wire Line
+	5650 4600 5650 4275
+Connection ~ 6350 5800
+Wire Wire Line
+	5650 5800 6350 5800
+Wire Wire Line
+	5650 5600 5650 5800
+Wire Wire Line
+	5650 5000 5650 5100
+Connection ~ 7300 5750
+Wire Wire Line
+	7000 5750 7300 5750
+Wire Wire Line
+	7000 5800 7000 5750
+Wire Wire Line
+	6350 5800 7000 5800
+Connection ~ 7975 5750
+Wire Wire Line
+	7300 5750 7975 5750
+Wire Wire Line
+	7300 5375 7300 5750
+Wire Wire Line
+	6350 5400 6350 5225
+Wire Wire Line
+	7300 4275 6350 4275
+Connection ~ 7300 4275
+Wire Wire Line
+	7300 4875 7300 4275
+Wire Wire Line
+	6350 4275 6350 4600
+Wire Wire Line
+	7975 4275 7300 4275
+Wire Wire Line
+	7975 4925 7975 4275
+Wire Wire Line
+	8175 5750 7975 5750
+Wire Wire Line
+	8650 5750 8475 5750
+$Comp
+L power:GND #PWR02
+U 1 1 5D80EC89
+P 8650 5950
+F 0 "#PWR02" H 8650 5700 50  0001 C CNN
+F 1 "GND" H 8655 5777 50  0000 C CNN
+F 2 "" H 8650 5950 50  0001 C CNN
+F 3 "" H 8650 5950 50  0001 C CNN
+	1    8650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D80EC96
+P 8325 5750
+F 0 "R4" V 8532 5750 50  0000 C CNN
+F 1 "10 " V 8441 5750 50  0000 C CNN
+F 2 "" V 8255 5750 50  0001 C CNN
+F 3 "~" H 8325 5750 50  0001 C CNN
+F 4 "R" H 8325 5750 50  0001 C CNN "Spice_Primitive"
+F 5 "10 meg" H 8325 5750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8325 5750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8325 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D80ECA3
+P 7975 5075
+F 0 "R2" H 8045 5121 50  0000 L CNN
+F 1 "10" H 8045 5030 50  0000 L CNN
+F 2 "" V 7905 5075 50  0001 C CNN
+F 3 "~" H 7975 5075 50  0001 C CNN
+F 4 "R" H 7975 5075 50  0001 C CNN "Spice_Primitive"
+F 5 "10" H 7975 5075 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7975 5075 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7975 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 5D80ECAD
+P 7300 5125
+F 0 "C1" H 7478 5171 50  0000 L CNN
+F 1 "1 mf" H 7478 5080 50  0000 L CNN
+F 2 "" H 7300 5125 50  0001 C CNN
+F 3 "~" H 7300 5125 50  0001 C CNN
+	1    7300 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D6
+U 1 1 5D80ECB7
+P 6350 5600
+F 0 "D6" V 6396 5472 50  0000 R CNN
+F 1 "DIODE" V 6305 5472 50  0000 R CNN
+F 2 "" H 6350 5600 50  0001 C CNN
+F 3 "~" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5D80ECC1
+P 5650 5400
+F 0 "D2" V 5696 5272 50  0000 R CNN
+F 1 "DIODE" V 5605 5272 50  0000 R CNN
+F 2 "" H 5650 5400 50  0001 C CNN
+F 3 "~" H 5650 5400 50  0001 C CNN
+	1    5650 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D5
+U 1 1 5D80ECCB
+P 6350 4800
+F 0 "D5" V 6396 4672 50  0000 R CNN
+F 1 "DIODE" V 6305 4672 50  0000 R CNN
+F 2 "" H 6350 4800 50  0001 C CNN
+F 3 "~" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 5D80ECD5
+P 5650 4800
+F 0 "D1" V 5696 4672 50  0000 R CNN
+F 1 "DIODE" V 5605 4672 50  0000 R CNN
+F 2 "" H 5650 4800 50  0001 C CNN
+F 3 "~" H 5650 4800 50  0001 C CNN
+	1    5650 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1475 3950 1475 4275
+Wire Wire Line
+	2350 3950 2350 4275
+Connection ~ 2350 4275
+Wire Wire Line
+	2350 4275 3350 4275
+Wire Wire Line
+	3350 3950 3350 4275
+Connection ~ 3350 4275
+Wire Wire Line
+	3350 4275 3800 4275
+Wire Wire Line
+	4100 4275 4200 4275
+Wire Wire Line
+	4200 4275 4200 5225
+Wire Wire Line
+	4200 5225 6350 5225
+Connection ~ 6350 5225
+Wire Wire Line
+	6350 5225 6350 5000
+Connection ~ 4200 4275
+Wire Wire Line
+	4200 1500 7725 1500
+Connection ~ 7725 1500
+Wire Wire Line
+	7725 1500 7725 1275
+Wire Wire Line
+	1475 3350 1475 1375
+Wire Wire Line
+	1475 1375 6075 1375
+Wire Wire Line
+	2350 3350 2350 3275
+Wire Wire Line
+	3350 3350 3350 2800
+Wire Wire Line
+	3350 2800 4425 2800
+Wire Wire Line
+	4425 2800 4425 5100
+Wire Wire Line
+	4425 5100 4700 5100
+$Comp
+L power:GND #PWR01
+U 1 1 5D8315B8
+P 1475 4450
+F 0 "#PWR01" H 1475 4200 50  0001 C CNN
+F 1 "GND" H 1480 4277 50  0000 C CNN
+F 2 "" H 1475 4450 50  0001 C CNN
+F 3 "" H 1475 4450 50  0001 C CNN
+	1    1475 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1475 4275 2350 4275
+Wire Wire Line
+	1475 4450 1475 4275
+Connection ~ 1475 4275
+Text GLabel 9425 550  2    50   Input ~ 0
+vout_1
+Wire Wire Line
+	9425 550  9350 550 
+Connection ~ 9350 550 
+Wire Wire Line
+	7975 4275 8075 4275
+Connection ~ 7975 4275
+Text GLabel 8175 3575 2    50   Input ~ 0
+vout_2
+Wire Wire Line
+	8175 3575 8000 3575
+Wire Wire Line
+	8000 3400 8000 3575
+Connection ~ 8000 3575
+Wire Wire Line
+	8000 3575 8000 3925
+Text GLabel 8225 5375 2    50   Input ~ 0
+vout_3
+Wire Wire Line
+	8225 5375 7975 5375
+Wire Wire Line
+	7975 5225 7975 5375
+Connection ~ 7975 5375
+Wire Wire Line
+	7975 5375 7975 5750
+Wire Wire Line
+	6375 3425 6375 3175
+Wire Wire Line
+	6375 3575 6375 3425
+Connection ~ 6375 3425
+Wire Wire Line
+	4200 3425 4200 1500
+Wire Wire Line
+	4200 4275 4200 3425
+Connection ~ 4200 3425
+Wire Wire Line
+	4200 3425 6375 3425
+Wire Wire Line
+	2350 3275 4725 3275
+$EndSCHEMATC
